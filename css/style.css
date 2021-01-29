@@ -1,0 +1,405 @@
+*{
+	box-sizing: border-box;
+}
+li{
+	list-style: none; 
+}
+a{
+	text-decoration: none;
+}
+.header{
+	padding: 15px 0;
+}
+.navigation{
+	padding: 0;
+	margin: 0;
+}
+.navigation-link{
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	color: #939699;
+}
+.navigation-link:hover{
+	text-decoration: underline;
+}
+.navigation-link:active{
+	opacity: 0.7;
+}
+.button{
+	background: #4592FF;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 20px;
+	border: none;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+	cursor: pointer;
+	outline: none;
+
+}
+.button:hover{
+	background-color: #939699;
+}
+.button:active{
+	opacity: 0.7;
+}
+.btn-icon{
+	margin-right: 10px;
+}
+.slider{
+	background-color: #B4D1E0;
+	position: relative;
+}
+.slide{
+	padding: 90px 0 110px 0;
+	min-height: 580px;
+}
+.label{
+	background-color: #3DC47E;
+	padding: 5px 12px;
+	cursor: pointer;
+	font-family: Lato;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFF;
+	border-radius: 3px;
+}
+.slide-title{
+	font-family: Roboto Slab;
+	font-weight: bold;
+	font-size: 55px;
+	line-height: 70px;
+	color: #262D33;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.slide-description{
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	color: #4B5157;
+	margin-bottom: 40px;
+}
+.btn-price{
+	margin-right: 10px;
+}
+.slide-1{
+	background: url(../img/slide.png);
+	background-repeat: no-repeat;
+	background-position: top right 10%;
+}
+.button-slide{
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.slider-nav{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 9;
+}
+.container-card{
+	/*padding-top: 50px;*/
+}
+.card{
+	padding: 60px 0 80px 45px;
+	border-radius: 10px;
+	min-height: 370px;
+}
+.card-1{
+	background: url(../img/card1.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+.card-title{
+	font-family: Roboto Slab;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	color: #262D33;
+	max-width: 221px;
+	margin-bottom: 15px;
+}
+.card-text{
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #4B5157;
+	max-width: 175px;
+	/*margin-bottom: 25px;*/
+}
+.card-2{
+	background: url(../img/card2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card2-title,
+.card2-text{
+	color: #fff;
+}
+.btn-icon:last-child{
+	margin-right: 0;
+	margin-left: 10px;
+}
+.btn-text{
+
+}
+
+.card-3{
+	background: #CCD5E6 url(../img/card3.png) no-repeat top right 15%;
+	min-height: 370px;
+	padding: 35px 0 0 47px;
+}
+.card3-title{
+	margin-top: 29px;
+	margin-bottom: 18px;
+	font-family: Roboto Slab;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+	color: #262D33;
+	max-width: 419px;
+}
+.card3-text{
+	max-width: 319px;
+	margin: 0;
+}
+.card3-btn{
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+.label-card{
+	
+}
+.card-4{
+	background: #FF4F52 url(../img/card4.png) no-repeat top right;
+	color: #fff;
+	padding: 35px 0 0 26px;
+}
+.card4-title{
+	max-width: 210px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.card4-text{
+	color: #fff;
+}
+.card4-price{
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+
+
+.price-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 0 8px;
+}
+.price-title{
+	font-family: Roboto Slab;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	color: #262D33;
+	margin-bottom: 30px;
+}
+.price-link{
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	color: #262D33;
+}
+.price-item{
+	padding: 18px 30px 35px 18px;
+	min-height: 370px;
+	position: relative;
+}
+.price-label{
+	position: absolute;
+	top: 18px;
+	left: 18px;
+}
+.price-item--inner{
+	text-align: center;
+}
+.price-image{
+	margin-top: 10px;
+}
+.price-name{
+	font-family: Roboto Slab;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	color: #262D33;
+	margin: 15px 0 5px 0;
+}
+.price-info{
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #4B5157;
+	margin-bottom: 20px;
+}
+.price-value{
+	font-family: Lato;
+	font-size: 18px;
+	line-height: 30px;
+	color: #262D33;
+}
+
+
+.footer{
+	background-color: #8F79D4;
+	margin: 0;
+}
+.footer-top{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 45px 0 44px 0;
+	border-bottom: 1px solid #D8BFFF;
+}
+.footer-navigation{
+	width: 464px;
+}
+.footer-list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+	width: 100%;
+}
+.footer-list_item{
+
+}
+.footer-list_link{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.footer-social{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-social_info{
+	margin-right: 25px;
+}
+.footer-social_logo{
+	margin-right: 15px;
+}
+.footer-social_info,
+.footer-copy{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #E7D9FF;
+}
+.footer-social_logo{
+
+}
+.footer-copy{
+
+}
+
+.footer-bottom{
+	padding-top: 35px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.services{
+	width: 340px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-left: 50px;
+}
+.services-item{
+	margin-right: 25px;
+}
+.footer-bottom_link{
+	
+}
+.top-link{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 78px;
+}
+.top-link-text{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+@media(max-width: 1200px) {
+	.slide-1{
+		background-size: cover;
+	}
+}
+@media(max-width: 992px) {
+	.slider-nav{
+		display: none;
+	}
+}
+@media(max-width: 607px) {
+	.header{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer-list{
+		flex-direction: column;
+	}
+}
+@media(max-width: 576px) {
+	.slide-title{
+		font-size: 36px;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+	.card{
+		background-position: left top;
+		padding: 30px;
+		min-height: 300px;
+	}
+	.card-4{
+		background-position: right top;
+	}
+	.card-3{
+		background-size: cover;
+	}
+}
